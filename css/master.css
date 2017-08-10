@@ -1,0 +1,350 @@
+/*  Animations Keyframes & Fonts    */
+
+
+@font-face {
+  font-family: 'Dosis';
+  src: url("../Fonts/Dosis-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'DosisB';
+  src: url("../Fonts/Dosis-Bold.otf") format("opentype");
+}
+
+@keyframes swirlyswirly {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes swirly-swirly {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes zoomzoom {
+  0%  {
+        height: 54vh;
+        top: 22vh;
+        left: 38%;
+      }
+  100% {
+          width: 105em;
+          height: 105em;
+          left: -3.9%;
+          top: -60.6%;
+          background-color: white;
+          z-index: 99999999;
+        }
+}
+
+@keyframes zoomzoomb {
+  0%  {
+        width: 105em;
+        height: 105em;
+        left: -3.9%;
+        top: -60.6%;
+        background-color: white;
+        z-index: 99999999;
+      }
+  100%  {
+          height: 54vh;
+          top: 22vh;
+          left: 38%;
+          background-color: inherit;
+          z-index: 0;
+        }
+}
+
+@keyframes slideRight {
+  100%{margin-left: 17.75%;}
+}
+
+@keyframes slideLeft {
+  0%{margin-left: 16.6%;}
+  100%{margin-left: 4em;}
+}
+
+@keyframes glow {
+  0% {background-color: rgba(255, 255, 255, 0);}
+  100% {background-color: #d82d2d;}
+}
+
+@keyframes reverse-glow {
+  0%  {background-color: #d82d2d;}
+  100% {background-color: rgba(255, 255, 255, 0);}
+}
+
+/*   END   */
+
+
+/*   Basic Structure Body Container etc.   */
+
+body{
+  overflow: hidden;
+}
+
+.container-fluid{
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100vh;
+}
+
+*{
+  font-family: 'Dosis';
+  color: #d82d2d;
+}
+
+a{
+  text-decoration: none;
+  color: #d82d2d;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #d82d2d;
+}
+
+/*   END   */
+
+/*   Info Paragraph Styling   */
+
+ol{
+  list-style: none;
+}
+
+.info{
+  float: right;
+  margin-top: 17%;
+  position: relative;
+}
+
+.info li{
+  position: absolute;
+}
+
+/*   END   */
+
+/*   Title Text & Line   */
+
+.title{
+  color: #d82d2d;
+  display: inline-block;
+  position: absolute;
+  margin-top: -74%;
+  z-index: 99999;
+  font-family: 'DosisB';
+}
+
+.title2{
+  color: #d82d2d;
+  display: inline-block;
+  position: absolute;
+  left: -2em;
+  z-index: 99999;
+  top: 43%;
+  font-family: 'DosisB';
+}
+
+.studio{
+  font-family: 'DosisB';
+  color: black;
+}
+
+.t2-sqberry{
+  font-family: 'DosisB';
+  border-bottom: 1px solid black;
+}
+
+.prodDev{
+  font-family: 'DosisB';
+  font-size: 16px;
+  margin-left: 19%;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.prodDev2{
+  font-family: 'DosisB';
+  font-size: 16px;
+  margin-top: .5em;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*   END   */
+
+/*   Navigation Menu & Menu Line   */
+
+.navi{
+  position: absolute;
+  float: left;
+  z-index: 99999;
+  margin-top: 12%;
+}
+
+.grid{
+  margin-bottom: 1em;
+  margin-left: 6em;
+  padding-right: 0;
+  margin-right: -12.5%;
+}
+
+.grid h5{
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 1em;
+  font-size: 16px;
+}
+
+.line{
+  height: 80vh;
+  width: 2px;
+  margin-top: 4%;
+  margin-left: 4em;
+  background-color: #d82d2d;
+  z-index: 99999;
+  display: inline-block;
+}
+
+.line2{
+  height: 5vh;
+  width: 2px;
+  margin-top: 1em;
+  margin-left: 17.34%;
+  background-color: #d82d2d;
+  z-index: 99999;
+  position: absolute;
+  display: inline-block;
+}
+
+.slideLeft{
+  animation: slideLeft 1.5s forwards;
+}
+
+.slideRight{
+  animation: slideRight 1.5s forwards;
+}
+
+.menu{
+  position: absolute;
+  z-index: 100009;
+  background-color: inherit;
+  top: 45%;
+  float: left;
+}
+
+.logo{
+  position: absolute;
+  z-index: 666;
+  top: 40%;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 0)!important;
+}
+
+/*   END   */
+
+/*   Shadow on Hover Styling   */
+
+.hover{
+  animation: glow 1.5s forwards;
+  animation-delay: 0;
+  -webkit-box-shadow: inset 0px 10px 33px 19px rgba(255,255,255,1);
+  -moz-box-shadow: inset 0px 10px 33px 19px rgba(255,255,255,1);
+  box-shadow: inset 0px 10px 33px 19px rgba(255,255,255,1);
+}
+
+.leave{
+  -webkit-box-shadow: inset 0px 10px 33px 19px rgba(255,255,255,1);
+  -moz-box-shadow: inset 0px 10px 33px 19px rgba(255,255,255,1);
+  box-shadow: inset 0px 10px 33px 19px rgba(255,255,255,1);
+  animation: reverse-glow 1.5s forwards;
+}
+
+/*   END   */
+
+/*   Rotating Rings Circles & Labels    */
+
+.jumbotron{
+  border-radius: 100%!important;
+  background: inherit;
+  border: 10px solid rgba(216, 45, 45, .5);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0!important;
+  height: 25.5em;
+  top: 25%;
+  left: 38%;
+  position: absolute;
+}
+
+.c0{
+  animation: swirlyswirly 10s infinite linear;
+}
+
+.circle{
+  animation: swirly-swirly 25s infinite linear;
+  border: 10px solid rgba(216, 45, 45, .8);
+}
+
+.circle1{
+  animation: swirly-swirly 10s infinite linear;
+  border: 10px solid rgba(216, 45, 45, .6);
+}
+
+.circle2{
+  left: 25%;
+  height: 95vh;
+  top: 2.5%;
+  border: none;
+}
+
+.labels{
+  margin-top: 25%;
+}
+
+.labels h5{
+  display: inline-block;
+}
+
+.l{
+  left: 4em;
+}
+
+.r{
+  right: 4em;
+}
+
+.t{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.b{
+  margin-top: 35%;
+}
+
+/*   END   */
+
+/*   Animation Classes for Circles   */
+
+.animate{
+  animation: zoomzoom 1s forwards linear;
+  animation-name: zoomzoom;
+  animation-direction: normal;
+}
+
+.reverse-animate{
+  animation: zoomzoomb 1s forwards linear;
+  animation-name: zoomzoomb;
+  animation-direction: normal;
+}
+
+/*   END   */
+
+/*   Removed Scrollbar, Because why the heck not?   */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*   Stylesheet END   */
