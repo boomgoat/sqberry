@@ -30,7 +30,6 @@
         left: 38%;
       }
   100% {
-          background-color: black;
           width: 45em;
           height: 94vh;
           margin-top: -10.5%;
@@ -42,7 +41,6 @@
 
 @keyframes zoomzoomb {
   0%  {
-    background-color: black;
     width: 45em;
     height: 94vh;
     margin-top: -10.5%;
@@ -337,7 +335,7 @@ ol{
 
 .jumbotron{
   border-radius: 100%!important;
-  background: inherit;
+  background: rgba(255, 255, 255, 1);
   border: 10px solid rgba(216, 45, 45, .5);
   background-size: contain;
   background-position: center;
@@ -352,11 +350,8 @@ ol{
 
 .jumbotron1{
   border-radius: 100%!important;
-  background: inherit;
+  background: none;
   border: 10px solid rgba(216, 45, 45, .5);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   padding: 0!important;
   height: 25.5em;
   top: 25%;
