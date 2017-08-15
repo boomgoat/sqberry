@@ -2,12 +2,12 @@ $(document).ready(function(){
 
   /*   Not Adding any Comments For The Script
        For Help Email: talhaiqbal11@gmail.com   */
-
+  $('.mute').hide();
   $('.navi').hide();
   $('.title, .prodDev, .line2').hide();
 
   $('.menu').click(function(){
-    $('.navi, .title, .title2, .line2, .prodDev').fadeToggle(1000);
+    $('.navi, .title, .title2, .line2, .prodDev').fadeToggle(600);
     $('.line').removeClass('slideLeft');
     $('.line').toggleClass('slideRight');
     $('.menu').click(function(){
@@ -15,27 +15,26 @@ $(document).ready(function(){
     });
   });
 
-  $('.logo, .labels, .menu, .title').mouseenter(function(){
-    $(this).removeClass('leave');
-    $(this).addClass('hover');
-  });
-  $('.logo, .labels, .menu, .title').mouseout(function(){
-    $(this).removeClass('hover');
-    $(this).addClass('leave');
+  $('.play').click(function(){
+    document.getElementById('myaudio').muted = true;
+    $('.play').hide();
+    window.stop();
+    $('.mute').show();
   });
 
-  $('.jumbotron').click(function(){
-    $('.jumbotron').not(this).each(function(){
-    $(this).hide();
-    });
+  $('.mute').click(function(){
+    document.getElementById('myaudio').muted = false;
+    $('.mute').hide();
+    $('.play').show();
+  });
+
+  $('.jumbotron, .labels').click(function(){
+    $('.circle2').fadeToggle(1600);
+    $('.logo').fadeToggle(1600);
     var size = this.width;
     $('.jumbotron').removeClass('reverse-animate');
     $('.jumbotron').toggleClass('animate');
-    $('.logo').fadeToggle('fast');
-    $('.jumbotron').click(function(){
-      $('.jumbotron').not(this).each(function(){
-      $(this).fadeIn(4100);
-      });
+    $('.jumbotron, .labels').click(function(){
       $('.jumbotron').toggleClass('reverse-animate');
     });
 
@@ -48,6 +47,7 @@ $(document).ready(function(){
     );
 
     var $labels = $('.w, .x, .y, .z');
+    var $elements = $('.one, .two, .three, .four')
 
     $('.one, .two, .three, .four').hide();
 

@@ -26,14 +26,15 @@
 @keyframes zoomzoom {
   0%  {
         height: 54vh;
-        top: 22vh;
+        top: 25%;
         left: 38%;
       }
   100% {
-          width: 105em;
-          height: 105em;
-          left: -3.9%;
-          top: -60.6%;
+          background-color: black;
+          width: 45em;
+          height: 94vh;
+          margin-top: -10.5%;
+          margin-left: -9%;
           background-color: white;
           z-index: 99999999;
         }
@@ -41,16 +42,17 @@
 
 @keyframes zoomzoomb {
   0%  {
-        width: 105em;
-        height: 105em;
-        left: -3.9%;
-        top: -60.6%;
-        background-color: white;
-        z-index: 99999999;
+    background-color: black;
+    width: 45em;
+    height: 94vh;
+    margin-top: -10.5%;
+    margin-left: -9%;
+    background-color: white;
+    z-index: 99999999;
       }
   100%  {
           height: 54vh;
-          top: 22vh;
+          top: 25%;
           left: 38%;
           background-color: inherit;
           z-index: 0;
@@ -83,16 +85,19 @@
 
 body{
   overflow: hidden;
+  background: url(../Images/wave.gif);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container-fluid{
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.85);
   height: 100vh;
 }
 
 *{
   font-family: 'Dosis';
-  color: #d82d2d;
 }
 
 a{
@@ -103,6 +108,20 @@ a{
 a:hover{
   text-decoration: none;
   color: #d82d2d;
+}
+
+.inner{
+  height: 100vh;
+  padding-top: 60vh;
+}
+
+.inner p{
+  padding-top: 10vh;
+}
+
+.inner img{
+  padding-top: 15vh;
+  height: 12em;
 }
 
 /*   END   */
@@ -117,6 +136,7 @@ ol{
   float: right;
   margin-top: 17%;
   position: relative;
+  color: #d82d2d;
 }
 
 .info li{
@@ -245,19 +265,70 @@ ol{
 
 /*   Shadow on Hover Styling   */
 
-.hover{
-  animation: glow 1.5s forwards;
-  animation-delay: 0;
-  -webkit-box-shadow: inset 0px 10px 33px 19px rgba(255,255,255,1);
-  -moz-box-shadow: inset 0px 10px 33px 19px rgba(255,255,255,1);
-  box-shadow: inset 0px 10px 33px 19px rgba(255,255,255,1);
+#flood-left {
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-box-shadow: inset 0px 0 0 0 #d82d2d;
+  -moz-box-shadow: inset 0px 0 0 0 #d82d2d;
+  -ms-box-shadow: inset 0px 0 0 0 #d82d2d;
+  -o-box-shadow: inset 0px 0 0 0 #d82d2d;
+  box-shadow: inset 0px 0 0 0 #d82d2d;
+  color: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+#flood-left:hover {
+  color: white;
+  -webkit-box-shadow: inset -500px 0 0 0 #d82d2d;
+  -moz-box-shadow: inset -500px 0 0 0 #d82d2d;
+  -ms-box-shadow: inset -500px 0 0 0 #d82d2d;
+  -o-box-shadow: inset -500px 0 0 0 #d82d2d;
+  box-shadow: inset -500px 0 0 0 #d82d2d;
 }
 
-.leave{
-  -webkit-box-shadow: inset 0px 10px 33px 19px rgba(255,255,255,1);
-  -moz-box-shadow: inset 0px 10px 33px 19px rgba(255,255,255,1);
-  box-shadow: inset 0px 10px 33px 19px rgba(255,255,255,1);
-  animation: reverse-glow 1.5s forwards;
+#flood-right {
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-box-shadow: inset 0px 0 0 0 #d82d2d;
+  -moz-box-shadow: inset 0px 0 0 0 #d82d2d;
+  -ms-box-shadow: inset 0px 0 0 0 #d82d2d;
+  -o-box-shadow: inset 0px 0 0 0 #d82d2d;
+  box-shadow: inset 0px 0 0 0 #d82d2d;
+  color: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+#flood-right:hover {
+  color: white;
+  -webkit-box-shadow: inset 500px 0 0 0 #d82d2d;
+  -moz-box-shadow: inset 500px 0 0 0 #d82d2d;
+  -ms-box-shadow: inset 500px 0 0 0 #d82d2d;
+  -o-box-shadow: inset 500px 0 0 0 #d82d2d;
+  box-shadow: inset 500px 0 0 0 #d82d2d;
+}
+
+.shadowfilter {
+	   -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,1));
+     -webkit-transition: all 0.5s linear;
+	   -o-transition: all 0.5s linear;
+     transition: all 0.5s linear;
+
+}.shadowfilter:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 1));
+}
+
+.labels:hover a{
+  color: white!important;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 /*   END   */
@@ -276,6 +347,22 @@ ol{
   top: 25%;
   left: 38%;
   position: absolute;
+
+}
+
+.jumbotron1{
+  border-radius: 100%!important;
+  background: inherit;
+  border: 10px solid rgba(216, 45, 45, .5);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0!important;
+  height: 25.5em;
+  top: 25%;
+  left: 38%;
+  position: absolute;
+
 }
 
 .c0{
@@ -285,6 +372,7 @@ ol{
 .circle{
   animation: swirly-swirly 25s infinite linear;
   border: 10px solid rgba(216, 45, 45, .8);
+
 }
 
 .circle1{
@@ -297,30 +385,20 @@ ol{
   height: 95vh;
   top: 2.5%;
   border: none;
+  background: rgba(0, 0, 0, 0);
 }
 
 .labels{
-  margin-top: 25%;
+  margin-top: 13em;
+  background: rgba(255, 0, 0, 0);
 }
 
 .labels h5{
   display: inline-block;
 }
 
-.l{
-  left: 4em;
-}
-
-.r{
-  right: 4em;
-}
-
 .t{
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.b{
-  margin-top: 35%;
 }
 
 /*   END   */
@@ -328,7 +406,7 @@ ol{
 /*   Animation Classes for Circles   */
 
 .animate{
-  animation: zoomzoom 1s forwards linear;
+  animation: zoomzoom .5s forwards linear;
   animation-name: zoomzoom;
   animation-direction: normal;
 }
@@ -337,6 +415,19 @@ ol{
   animation: zoomzoomb 1s forwards linear;
   animation-name: zoomzoomb;
   animation-direction: normal;
+}
+
+/*   END   */
+
+/*   AUDIO   */
+
+.audio{
+  float: right;
+  right: -25%;
+}
+
+.mute{
+  margin-top: 1em;
 }
 
 /*   END   */

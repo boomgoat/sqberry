@@ -17,6 +17,7 @@
     <!-- Local Script Link -->
 
     <script type="text/javascript" src="JS/script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.3.7/wavesurfer.min.js"></script>
 
     <!-- Bootstrap Scripts Link -->
 
@@ -31,6 +32,15 @@
   <body>
 
     <div class="container-fluid">
+
+      <audio autoplay loop id="myaudio">
+        <source src="music/MitiS.m4a">
+        </audio>
+
+        <script>
+          var audio = document.getElementById("myaudio");
+          audio.volume = 0.1;
+        </script>
 
       <!-- ICONS & TITLE -->
 
@@ -164,7 +174,7 @@
 
       <a href="#">
         <img src="Images/logo.png"
-        class="logo col-md-1 col-md-offset-5"
+        class="logo col-md-1 col-md-offset-5 shadowfilter"
         alt="">
       </a>
 
@@ -174,37 +184,37 @@
 
       <!-- FLOATING LABELS -->
 
-      <div class="jumbotron circle2 text-right col-md-6">
-        <div class="labels col-md-6 text-left l t">
+      <div class="jumbotron1 circle2 text-right col-md-6">
+        <div id="flood-left" class="labels col-md-6 text-left l t">
           <a href="#">
-            <h5 class=".w">
+            <h5>
               <strong>
                 Design
               </strong>
             </h5>
           </a>
         </div>
-        <div class="labels col-md-6 text-right r t">
+        <div id="flood-right" class="labels col-md-6 text-right r t">
           <a href="#">
-            <h5 class=".x">
+            <h5>
               <strong>
                 Develop
               </strong>
             </h5>
           </a>
         </div>
-        <div class="labels col-md-6 text-left l t b">
+        <div id="flood-left" class="labels col-md-6 text-left l t b">
           <a href="#">
-            <h5 class=".y">
+            <h5>
               <strong>
                 Innovate
               </strong>
             </h5>
           </a>
         </div>
-        <div class="labels col-md-6 text-right r t b">
+        <div id="flood-right" class="labels col-md-6 text-right r t b">
           <a href="#">
-            <h5 class=".z">
+            <h5>
               <strong>
                 Consult
               </strong>
@@ -226,7 +236,10 @@
 
       </div>
       <div class="jumbotron circle1 col-md-3">
+        <div class="container inner text-center">
 
+
+        </div>
       </div>
       <!-- MAIN ANIMATION (ROTATING CIRCLES) END -->
 
@@ -296,7 +309,10 @@
 
       <!-- SIDELINE INFORMATION END -->
 
-
+      <div class="audio col-md-1">
+        <a href="#"><img src="Images/play.gif" class="sound play col-md-12" alt=""></a>
+        <a href="#"><img src="Images/mute.gif" class="sound mute col-md-12" alt=""></a>
+      </div>
 
 
     </div>
