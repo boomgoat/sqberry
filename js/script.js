@@ -75,7 +75,6 @@ $(document).ready(function(){
   $('.jumbotron, .labels').click(function(){
     $('.circle2').fadeToggle(1600);
     $('.logo').fadeToggle(1600);
-    var size = this.width;
     $('.jumbotron').removeClass('reverse-animate');
     $('.jumbotron').toggleClass('animate');
     $('.jumbotron, .labels').click(function(){
