@@ -109,17 +109,26 @@ a:hover{
 }
 
 .inner{
-  height: 100vh;
-  padding-top: 60vh;
+  padding-top: 10vh;
+  width: 80%;
 }
 
 .inner p{
   padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .inner img{
   padding-top: 15vh;
   height: 12em;
+}
+
+.line3{
+  background-color: #d82d2d;
+  height: 1px;
+  transform: rotate(45deg);
+  top: 1.5em;
+  left: 2.5em;
 }
 
 /*   END   */
@@ -390,6 +399,7 @@ ol{
 
 .labels h5{
   display: inline-block;
+  font-size: 1.5em;
 }
 
 .t{
@@ -423,6 +433,9 @@ ol{
 
 .mute{
   margin-top: 1em;
+}
+.play{
+  padding-bottom: 1em;
 }
 
 /*   END   */

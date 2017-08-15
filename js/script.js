@@ -4,6 +4,9 @@ $(document).ready(function(){
        For Help Email: talhaiqbal11@gmail.com   */
   $('.mute').hide();
   $('.navi').hide();
+  $('.inner').hide();
+  $('#close').hide();
+  $('.line3').hide();
   $('.title, .prodDev, .line2').hide();
 
   $('.menu').click(function(){
@@ -12,6 +15,47 @@ $(document).ready(function(){
     $('.line').toggleClass('slideRight');
     $('.menu').click(function(){
       $('.line').toggleClass('slideLeft');
+    });
+  });
+
+  $('.design').click(function(){
+    $('#close').fadeIn(3200);
+    $('.line3').fadeIn(3200);
+    $('#design').fadeIn(3200);
+    $('#close, .jumbotron').click(function(){
+      $('#close').hide();
+      $('.line3').hide();
+      $('#design').hide();
+    });
+  });
+  $('.develop').click(function(){
+    $('#close').fadeIn(3200);
+    $('.line3').fadeIn(3200);
+    $('#develop').fadeIn(3200);
+    $('#close, .jumbotron').click(function(){
+      $('#close').hide();
+      $('.line3').hide();
+      $('#develop').hide();
+    });
+  });
+  $('.innovate').click(function(){
+    $('#close').fadeIn(3200);
+    $('.line3').fadeIn(3200);
+    $('#innovate').fadeIn(3200);
+    $('#close,.jumbotron').click(function(){
+      $('#close').hide();
+      $('.line3').hide();
+      $('#innovate').hide();
+    });
+  });
+  $('.consult').click(function(){
+    $('#close').fadeIn(3200);
+    $('.line3').fadeIn(3200);
+    $('#consult').fadeIn(3200);
+    $('#close, .jumbotron').click(function(){
+      $('#close').hide();
+      $('.line3').hide();
+      $('#consult').hide();
     });
   });
 
