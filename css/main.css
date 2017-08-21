@@ -1,0 +1,235 @@
+/*  Animations Keyframes & Fonts    */
+
+
+@font-face {
+  font-family: 'Dosis';
+  src: url("../fonts/Dosis-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'DosisB';
+  src: url("../fonts/Dosis-Bold.otf") format("opentype");
+}
+
+@keyframes swirlyswirly {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes swirly-swirly {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+/*   END   */
+
+/*   Basic Structure Body Container etc.   */
+
+*{
+  overflow-x: hidden;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+* a{
+  text-decoration: none;
+  color: white;
+}
+
+* a:hover{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.);
+}
+
+.intro{
+  height: auto;
+  height: 100vh;
+  overflow-y: scroll;
+  background-image: url(../Images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'Dosis';
+}
+
+.header{
+  height: 50em;
+  color: black;
+}
+
+.title{
+  font-family: 'Dosis';
+  /* color: #d82d2d; */
+}
+
+.title h2{
+  margin-top: 2em;
+}
+
+.tagline h1{
+  margin-top: 2em;
+  font-size: 6em;
+  overflow: hidden;
+}
+
+.about{
+  height: auto;
+  background-image: url(../Images/.png);
+  background-color: black;
+  color: white;
+}
+
+.about p{
+  margin-top: 3em;
+  font-size: 2em;
+  margin: 3em;
+}
+
+.about h2{
+  margin-top: 5em;
+  font-family: 'DosisB';
+}
+
+.productsIntro{
+  height: 25em;
+  color: black;
+  background-color: white;
+  background-position: center 10em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../Images/logo.png);
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.productsIntro h3{
+  margin-top: .7em;
+  font-size: 4em;
+  color: black;
+  font-family: 'Dosis';
+  overflow: hidden;
+}
+
+.products{
+  background-color: white;
+}
+
+.service{
+  height: 39em;
+  margin: 10em;
+}
+
+.design{
+  background-image: url(../Images/design.jpg);
+  background-size: cover;
+}
+
+.develop{
+  background-image: url(../Images/develop.jpg);
+  background-size: cover;
+}
+
+.innovate{
+  background-image: url(../Images/innovate.jpg);
+  background-size: cover;
+}
+
+.consult{
+  background-image: url(../Images/consult.jpg);
+  background-size: cover;
+}
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.overlay h1{
+  color: white;
+  margin-top: 20%;
+}
+
+.contact{
+  height: 45em;
+  background-image: url(../Images/hq.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1em;
+}
+
+.over{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.over h3{
+    margin-top: 5em;
+    font-size: 4em;
+    font-family: 'Dosis';
+    overflow: hidden;
+}
+
+.closing{
+    height: 25em;
+    color: black;
+    background-color: white;
+    background-position: center -16em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../Images/logo.png);
+}
+
+.closing h3{
+  margin-top: 3em;
+  font-size: 4em;
+  color: black;
+  font-family: 'Dosis';
+  overflow: hidden;
+}
+
+.footer{
+  height: 10em;
+  background-color: black;
+  color: white;
+}
+
+.footer h1{
+  margin-top: 1em;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media (max-width: 786px) {
+
+  .tagline h1{
+    font-size: 4em;
+  }
+
+  .service{
+    margin: 1em;
+    height: 21em;
+  }
+
+  .contact{
+    height: 29em;
+  }
+
+  .footer{
+    height: 15em;
+  }
+}

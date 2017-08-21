@@ -1,0 +1,16 @@
+$(document).ready(function(){
+  $('body').hide();
+  $('.overlay').hide();
+  $('.overlay>*').hide();
+  $('.tagline').hide();
+  $('body').fadeIn(3200);
+  $('.tagline').fadeIn(3900);
+  $('.service').mouseenter(function(){
+    $(this).find('.overlay').fadeIn();
+    $(this).find('.overlay>*').slideDown(600);
+  });
+  $('.service').mouseleave(function(){
+    $(this).find('.overlay').fadeOut();
+    $(this).find('.overlay>*').slideUp();
+  });
+});
