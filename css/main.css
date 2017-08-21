@@ -229,6 +229,11 @@ body{
     height: 29em;
   }
 
+  .contact h3{
+    font-size: 4em;
+    margin-top: 0em;
+  }
+
   .footer{
     height: 15em;
   }
