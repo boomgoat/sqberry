@@ -1,0 +1,43 @@
+/*  Animations Keyframes & Fonts    */
+
+@font-face {
+  font-family: 'Dosis';
+  src: url("../fonts/Dosis-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'DosisB';
+  src: url("../fonts/Dosis-Bold.otf") format("opentype");
+}
+
+/*   END   */
+
+/*   Basic Structure Body Container etc.   */
+
+.container-fluid{
+  height: 100vh;
+  font-family: 'Dosis';
+  background-color: black;
+  color: #d82d2d;
+}
+
+.navigation{
+  height: 100%;
+}
+
+.navigation img{
+  margin-left: 42%;
+  top: 20vh;
+}
+
+.navigation h1{
+  top: 20%;
+}
+
+@media (max-width: 786px) {
+  .navigation img{
+    margin-left: 21%;
+    top: 20vh;
+    z-index: 999;
+  }
+}

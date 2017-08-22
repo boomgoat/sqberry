@@ -11,19 +11,6 @@
   src: url("../fonts/Dosis-Bold.otf") format("opentype");
 }
 
-@keyframes swirlyswirly {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes swirly-swirly {
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
-
 /*   END   */
 
 /*   Basic Structure Body Container etc.   */
@@ -43,18 +30,82 @@ body{
 
 * a:hover{
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .intro{
   height: auto;
   height: 100vh;
   overflow-y: scroll;
-  background-image: url(../Images/logo.png);
-  background-position: center;
+  background-image: url(../Images/main.png);
+  background-position: center 5em;
   background-repeat: no-repeat;
   background-size: contain;
   font-family: 'Dosis';
+}
+
+.navigation{
+  position: fixed;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 15vw;
+}
+
+.navigation ol{
+  display: inline-block;
+}
+
+.navigation ol li{
+  list-style: none;
+  font-family: 'Dosis';
+  display: block;
+}
+
+li h4{
+  margin-top: 2.5em;
+}
+
+.red{
+  color: #d82d2d;
+}
+
+.gray{
+  color: #333333;
+}
+
+.anchor{
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,0) 54%, rgba(255,255,255,0) 57%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 38%,rgba(255,255,255,0) 54%,rgba(255,255,255,0) 57%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 38%,rgba(255,255,255,0) 54%,rgba(255,255,255,0) 57%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+  z-index: 9999;
+}
+
+.anchor h4{
+  font-family: 'DosisB';
+}
+
+.anchor li:hover h4{
+  transform: rotate(360deg);
+  transform-origin: left;
+  transition: .3s ease-in-out;
+}
+
+.description h4:hover{
+  color: #d82d2d!important;
+}
+
+.slideLeft{
+  left: -500px;
+  z-index: 0;
+  transition: 1s ease-in-out;
+}
+
+.slideRight{
+  left: -50px;
+  transition: 1s ease-in-out;
 }
 
 .header{
@@ -67,21 +118,17 @@ body{
   /* color: #d82d2d; */
 }
 
-.title h2{
-  margin-top: 2em;
-}
-
 .tagline h1{
-  margin-top: 2em;
+  margin-top: 1.7em;
   font-size: 6em;
   overflow: hidden;
 }
 
 .about{
   height: auto;
-  background-image: url(../Images/.png);
-  background-color: black;
+  background-color: #333333;
   color: white;
+  left: 1.7em;
 }
 
 .about p{
@@ -99,19 +146,14 @@ body{
   height: 25em;
   color: black;
   background-color: white;
-  background-position: center 10em;
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(../Images/logo.png);
 }
 
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
-}
-
 .productsIntro h3{
-  margin-top: .7em;
+  margin-top: 1.5em;
   font-size: 4em;
   color: black;
   font-family: 'Dosis';
@@ -120,31 +162,36 @@ body{
 
 .products{
   background-color: white;
+  margin-bottom: -1em;
 }
 
 .service{
   height: 39em;
-  margin: 10em;
 }
 
 .design{
   background-image: url(../Images/design.jpg);
   background-size: cover;
+  margin: 10em;
+  margin-top: 0em;
 }
 
 .develop{
   background-image: url(../Images/develop.jpg);
   background-size: cover;
+  margin: 10em;
 }
 
 .innovate{
   background-image: url(../Images/innovate.jpg);
   background-size: cover;
+  margin: 10em;
 }
 
 .consult{
   background-image: url(../Images/consult.jpg);
   background-size: cover;
+  margin: 10em;
 }
 
 .overlay{
@@ -160,11 +207,12 @@ body{
 }
 
 .contact{
-  height: 45em;
+  height: 35em;
   background-image: url(../Images/hq.jpg);
   background-position: center;
   background-size: cover;
-  margin-bottom: 1em;
+  padding: 0;
+  left: 1.9em;
 }
 
 .over{
@@ -183,16 +231,16 @@ body{
 
 .closing{
     height: 25em;
-    color: black;
+    color: #d82d2d;
     background-color: white;
-    background-position: center -16em;
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(../Images/logo.png);
+    background-image: url(../Images/axe.jpg);
 }
 
 .closing h3{
-  margin-top: 3em;
+  margin-top: 2em;
   font-size: 4em;
   color: black;
   font-family: 'Dosis';
@@ -215,9 +263,20 @@ body{
 
 
 @media (max-width: 786px) {
+  .about{
+    left: 0;
+  }
 
   .tagline h1{
     font-size: 4em;
+  }
+
+  .productsIntro .red{
+    color: black;
+  }
+
+  .productsIntro{
+    text-align: center;
   }
 
   .service{
@@ -227,11 +286,17 @@ body{
 
   .contact{
     height: 29em;
+    left: 0;
   }
 
   .contact h3{
     font-size: 4em;
     margin-top: 0em;
+    overflow: hidden;
+  }
+
+  .closing{
+    text-align: center;
   }
 
   .footer{

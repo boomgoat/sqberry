@@ -1,9 +1,11 @@
 $(document).ready(function(){
-  $('body').hide();
+  $('.container-fluid').hide();
   $('.overlay').hide();
   $('.overlay>*').hide();
   $('.tagline').hide();
-  $('body').fadeIn(3200);
+  /*$('.description').hide();*/
+  $('.description').addClass('slideLeft')
+  $('.container-fluid').fadeIn(3200);
   $('.tagline').fadeIn(3900);
   $('.service').mouseenter(function(){
     $(this).find('.overlay').fadeIn();
@@ -12,5 +14,13 @@ $(document).ready(function(){
   $('.service').mouseleave(function(){
     $(this).find('.overlay').fadeOut();
     $(this).find('.overlay>*').slideUp();
+  });
+  $('.navigation').mouseenter(function(){
+    $('.description').removeClass('slideLeft');
+    $('.description').addClass('slideRight');
+  });
+  $('.navigation').mouseleave(function(){
+    $('.description').removeClass('slideRight');
+    $('.description').addClass('slideLeft');
   });
 });
