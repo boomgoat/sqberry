@@ -27,13 +27,13 @@
   0%  {
         height: 54vh;
         top: 25%;
-        left: 38%;
+        left: 5vw;
       }
   100% {
-          width: 45em;
+          width: 45vw;
           height: 94vh;
           margin-top: -10.5%;
-          margin-left: -9%;
+          margin-left: 23vw;
           background-color: white;
           z-index: 99999999;
         }
@@ -41,17 +41,17 @@
 
 @keyframes zoomzoomb {
   0%  {
-    width: 45em;
+    width: 45vw;
     height: 94vh;
     margin-top: -10.5%;
-    margin-left: -9%;
+    margin-left: 23vw;
     background-color: white;
     z-index: 99999999;
       }
   100%  {
           height: 54vh;
           top: 25%;
-          left: 38%;
+          left: 5vw;
           background-color: inherit;
           z-index: 0;
         }
