@@ -10,7 +10,8 @@ $(document).ready(function(){
   $('.title, .prodDev, .line2').hide();
 
   $('.menu').click(function(){
-    $('.navi, .title, .title2, .line2, .prodDev').fadeToggle(600);
+    $('.title, .title2, .line2, .prodDev').fadeToggle(1200);
+    $('.navi').fadeToggle(1600);
     $('.line').removeClass('slideLeft');
     $('.line').toggleClass('slideRight');
     $('.menu').click(function(){

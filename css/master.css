@@ -82,15 +82,15 @@
 /*   Basic Structure Body Container etc.   */
 
 body{
-  overflow: hidden;
-  background: url(../Images/wave.gif);
-  background-position: bottom;
-  background-repeat: no-repeat;
+  overflow-x: hidden;
+  /*background: url(../Images/wave.gif);*/
+  background-position: top;
+  background-repeat: repeat-y;
   background-size: cover;
 }
 
 .container-fluid{
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(252, 252, 252, 0.75);
   height: 100vh;
 }
 
@@ -101,6 +101,7 @@ body{
 a{
   text-decoration: none;
   color: #d82d2d;
+  cursor: pointer;
 }
 
 a:hover{
@@ -141,7 +142,7 @@ ol{
 
 .info{
   float: right;
-  margin-top: 17%;
+  margin-top: 37%;
   position: relative;
   color: #d82d2d;
 }
@@ -157,19 +158,22 @@ ol{
 .title{
   color: #d82d2d;
   display: inline-block;
-  position: absolute;
-  margin-top: -74%;
+  position: fixed;
+  margin-top: -12.3%;
   z-index: 99999;
+  font-size: 1.75vw;
   font-family: 'DosisB';
 }
 
 .title2{
   color: #d82d2d;
   display: inline-block;
-  position: absolute;
+  position: fixed;
   left: -2em;
   z-index: 99999;
-  top: 43%;
+  top: 42%;
+  left: .1vw;
+  font-size: 2vw;
   font-family: 'DosisB';
 }
 
@@ -180,31 +184,30 @@ ol{
 
 .t2-sqberry{
   font-family: 'DosisB';
-  border-bottom: 1px solid black;
 }
 
 .prodDev{
   font-family: 'DosisB';
-  font-size: 16px;
+  font-size: 1.25vw;
   margin-left: 19%;
-  position: absolute;
+  position: fixed;
   color: rgba(0, 0, 0, 0.5);
 }
 
-.prodDev2{
+/*.prodDev2{
   font-family: 'DosisB';
-  font-size: 16px;
+  font-size: 1.25vw;
   margin-top: .5em;
   position: absolute;
   color: rgba(0, 0, 0, 0.5);
-}
+}*/
 
 /*   END   */
 
 /*   Navigation Menu & Menu Line   */
 
 .navi{
-  position: absolute;
+  position: fixed;
   float: left;
   z-index: 99999;
   margin-top: 12%;
@@ -220,11 +223,12 @@ ol{
 .grid h5{
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 1em;
-  font-size: 16px;
+  font-size: 1.25vw;
 }
 
 .line{
   height: 80vh;
+  position: fixed;
   width: 2px;
   margin-top: 4%;
   margin-left: 4em;
@@ -237,15 +241,15 @@ ol{
   height: 5vh;
   width: 2px;
   margin-top: 1em;
-  margin-left: 17.34%;
+  margin-left: 17.8%;
   background-color: #d82d2d;
   z-index: 99999;
-  position: absolute;
+  position: fixed;
   display: inline-block;
 }
 
 .slideLeft{
-  animation: slideLeft 1.5s forwards;
+  animation: slideLeft 2.5s forwards;
 }
 
 .slideRight{
@@ -253,7 +257,7 @@ ol{
 }
 
 .menu{
-  position: absolute;
+  position: fixed;
   z-index: 100009;
   background-color: inherit;
   top: 45%;
@@ -329,7 +333,7 @@ ol{
 }
 
 .labels:hover a{
-  color: white!important;
+  color: rgba(0, 0, 0, 0.5);!important;
   -webkit-transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;
   -ms-transition: 1s ease-in-out;
@@ -344,15 +348,15 @@ ol{
 
 .jumbotron{
   border-radius: 100%!important;
-  background: rgba(255, 255, 255, 1);
+  background: inherit;
   border: 10px solid rgba(216, 45, 45, .5);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   padding: 0!important;
-  height: 25.5em;
+  height: 54vh;
   top: 25%;
-  left: 38%;
+  left: 5vw;
   position: absolute;
 
 }
@@ -362,9 +366,9 @@ ol{
   background: none;
   border: 10px solid rgba(216, 45, 45, .5);
   padding: 0!important;
-  height: 25.5em;
+  height: 54vh;
+  left: 5vw;
   top: 25%;
-  left: 38%;
   position: absolute;
 
 }
@@ -385,21 +389,19 @@ ol{
 }
 
 .circle2{
-  left: 25%;
-  height: 95vh;
-  top: 2.5%;
-  border: none;
-  background: rgba(0, 0, 0, 0);
+  height: auto;
+  float: right;
+  right: -35%;
+  margin-top: 15%;
 }
 
 .labels{
-  margin-top: 13em;
   background: rgba(255, 0, 0, 0);
 }
 
 .labels h5{
-  display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.5vw;
+  margin-top: 1em;
 }
 
 .t{
@@ -439,6 +441,230 @@ ol{
 }
 
 /*   END   */
+
+/*    **** Landing Panel End ****     */
+
+/*  Model Panel  */
+
+.modelPanel{
+  height: 100vh;
+  background-image: url(../Images/FG.png);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.textBox{
+  height: 100vh;
+}
+
+.textBox h1{
+  padding-top: 50vh;
+  font-size: 5vw;
+}
+
+/*    **** Model Panel End ****     */
+
+/*    **** emTech Panel ****     */
+
+.emTechPanel{
+  height: 100vh;
+}
+
+.arBox{
+  background-image: url(../Images/ar.png);
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.arInfoBox h1{
+  font-size: 6.8vw;
+  margin-left: -8.4vw;
+}
+
+.arInfoBox p{
+  font-size: 1.6vw;
+  margin-left: -3vw;
+}
+
+.vrBox{
+  background-image: url(../Images/vr.png);
+  height: 100vh;
+  margin-left: -3.85vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.vrInfoBox{
+  z-index: 1;
+}
+
+.vrInfoBox h1{
+  font-size: 6.8vw;
+  margin-left: 1.5vw;
+}
+
+.vrInfoBox p{
+  font-size: 1.6vw;
+  margin-right: 4vw;
+}
+
+.white{
+  color: white;
+}
+
+.red{
+  color: #d82d2d;
+  margin-right: -2.4vw;
+}
+
+/*    **** emTech Panel End ****     */
+
+/*    **** redesign Panel ****     */
+
+.redesignPanel{
+  height: 50vh;
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+  background-image: url(../Images/rd.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.redesignPanel h1{
+  font-size: 8vw;
+  margin-top: 31vh;
+  margin-left: 17vw;
+}
+
+.redesignPanel p{
+  font-size: 1.5vw;
+  margin-left: 18vw;
+}
+
+/*    **** redesign Panel End ****     */
+
+/*    **** team Panel ****     */
+
+.teamPanel{
+  height: 98vh;
+  margin-top: 5vh;
+}
+
+.teamHead{
+  background-color: rgba(255, 0, 0, 0.5);
+  height: 20vh;
+}
+
+.teamHead h1{
+  font-size: 7vw;
+}
+
+.fill{
+  height: 25vh;
+}
+
+.teamAnimation{
+  height: 50vh;
+}
+
+.teamAnimation h1{
+  margin-top: 120%;
+  font-size: 2vw;
+}
+
+.teamAnimation p{
+  font-size: 1vw;
+}
+
+.tA1{
+    background-image: url(../Images/z.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tA2{
+    background-image: url(../Images/s1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tA3{
+    background-image: url(../Images/s2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*    **** team Panel End ****     */
+
+/*    **** client Panel End ****     */
+
+.clientPanel{
+    height: 98vh;
+    margin-top: 2vh;
+}
+
+.clientHead{
+  background-color: rgba(255, 0, 0, 0.5);
+  height: 20vh;
+  width: 20.2vw;
+}
+
+.clientHead h1{
+  font-size: 7vw;
+}
+
+/*    **** client Panel End ****     */
+
+/*    **** Footer ****     */
+
+.footer{
+  height: 35vh;
+  left: 5vw;
+  margin-bottom: 2vh;
+}
+
+.footerBlocks{
+  background-color: #2E2E2E;
+  margin: 2vw;
+  height: 100%;
+}
+
+/*    **** Footer End ****     */
+
+/*    **** Button ****     */
+
+.button{
+  height: 10vh;
+  width: 6em;
+  margin-top: 40vh;
+  position: absolute;
+  left: 94%;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.button h1{
+  font-size: 2vw;
+  color: white;
+}
+
+.rD{
+  margin-top: 25vh;
+}
+
+.rD h1{
+  font-size: 2vw;
+  margin-left: 0vw;
+  margin-top: 1.5vw;
+  color: white;
+}
+
+/*    **** Button End ****     */
 
 /*   Removed Scrollbar, Because why the heck not?   */
 
