@@ -672,4 +672,39 @@ ol{
     display: none;
 }
 
-/*   Stylesheet END   */
+/*   Desktop Stylesheet END   */
+
+@media (max-width:786px) {
+  .landing{
+    height: 100vh;
+  }
+  .title{
+    font-size: 6vw;
+  }
+  .title2{
+    font-size: 6vw;
+    top: 85%;
+    position: absolute;
+  }
+  .menu{
+    top: 35%;
+  }
+  .navi{
+    background-color: white;
+    height: 80vh;
+    border-right: 2px solid #d82d2d;
+    overflow-y: hidden;
+  }
+  .grid{
+    height: 5vh;
+    margin-right: 5%;
+  }
+  .grid h5{
+    font-size: 5vw;
+  }
+  .jumbotron{
+    height: 45vh;
+    left: 8%;
+    top: 27%;
+  }
+}
