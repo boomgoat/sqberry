@@ -72,7 +72,8 @@ $(document).ready(function(){
     $('.mute').hide();
     $('.play').show();
   });
-
+  var mq = window.matchMedia( "(min-width: 786px)" );
+  if(mq.matches){
   $('.jumbotron, .labels').click(function(){
     $('.circle2').fadeToggle(1600);
     $('.logo').fadeToggle(1600);
@@ -88,7 +89,7 @@ $(document).ready(function(){
         function() {
             $(".jumbotron").removeClass('reverse-animate');
         }
-    );
+    ); }
 
     var $labels = $('.w, .x, .y, .z');
     var $elements = $('.one, .two, .three, .four')

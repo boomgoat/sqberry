@@ -675,6 +675,9 @@ ol{
 /*   Desktop Stylesheet END   */
 
 @media (max-width:786px) {
+  body{
+    overflow-x: hidden;
+  }
   .landing{
     height: 100vh;
   }
@@ -706,5 +709,34 @@ ol{
     height: 45vh;
     left: 8%;
     top: 27%;
+  }
+  .white{
+    color: black;
+  }
+  .arInfoBox  p{
+    font-size: 4vw;
+  }
+  .vrInfoBox  p{
+    font-size: 4vw;
+  }
+  .emTechPanel{
+    height: 150vh;
+  }
+  .button{
+    left: 85%;
+    z-index: 999;
+  }
+  .button h1{
+    font-size: 8vw;
+    margin-top: 15%;
+  }
+  .rD .glyphicon{
+    margin-top: 1%;
+  }
+  .redesignPanel h1{
+  }
+  .redesignPanel p{
+    margin-top: 75%;
+    font-size: 5vw;
   }
 }
