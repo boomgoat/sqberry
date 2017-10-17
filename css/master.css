@@ -82,16 +82,14 @@
 /*   Basic Structure Body Container etc.   */
 
 body{
-  overflow-x: hidden;
   /*background: url(../Images/wave.gif);*/
   background-position: top;
   background-repeat: repeat-y;
   background-size: cover;
 }
 
-.container-fluid{
+.landing{
   background-color: rgba(252, 252, 252, 0.75);
-  height: 100vh;
 }
 
 *{
@@ -361,17 +359,7 @@ ol{
 
 }
 
-.jumbotron1{
-  border-radius: 100%!important;
-  background: none;
-  border: 10px solid rgba(216, 45, 45, .5);
-  padding: 0!important;
-  height: 54vh;
-  left: 5vw;
-  top: 25%;
-  position: absolute;
 
-}
 
 .c0{
   animation: swirlyswirly 10s infinite linear;
@@ -683,10 +671,15 @@ ol{
   }
   .title{
     font-size: 6vw;
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+    z-index: 0;
   }
   .title2{
     font-size: 6vw;
     top: 85%;
+    left: 10%;
     position: absolute;
   }
   .menu{
@@ -694,11 +687,14 @@ ol{
   }
   .navi{
     background-color: white;
-    height: 80vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    top: 0%;
     border-right: 2px solid #d82d2d;
-    overflow-y: hidden;
   }
   .grid{
+    margin-top: 8%;
     height: 5vh;
     margin-right: 5%;
   }
@@ -707,11 +703,19 @@ ol{
   }
   .jumbotron{
     height: 45vh;
-    left: 8%;
-    top: 27%;
+  }
+  .logo{
+    left: 0vw;
+    top: 38vh;
   }
   .white{
     color: black;
+  }
+  .textBox{
+      padding-top: 25%;
+  }
+  .textBox h1{
+    font-size: 7vw;
   }
   .arInfoBox  p{
     font-size: 4vw;
@@ -725,6 +729,7 @@ ol{
   .button{
     left: 85%;
     z-index: 999;
+    width: 15vw;
   }
   .button h1{
     font-size: 8vw;
@@ -738,5 +743,18 @@ ol{
   .redesignPanel p{
     margin-top: 75%;
     font-size: 5vw;
+  }
+  .teamPanel{
+    height: 250vh;
+  }
+  .teamAnimation{
+    height: 50vh;
+    margin-bottom: 65%;
+  }
+  .teamAnimation h1{
+    font-size: 8vw;
+  }
+  .teamAnimation p{
+    font-size: 4vw;
   }
 }

@@ -74,6 +74,8 @@ $(document).ready(function(){
   });
   var mq = window.matchMedia( "(min-width: 786px)" );
   if(mq.matches){
+    var audio = document.getElementById("myaudio");
+    audio.volume = 0.1;
   $('.jumbotron, .labels').click(function(){
     $('.circle2').fadeToggle(1600);
     $('.logo').fadeToggle(1600);
