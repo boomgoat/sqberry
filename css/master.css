@@ -88,6 +88,11 @@ body{
   background-size: cover;
 }
 
+.container-fluid{
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
 .landing{
   background-color: rgba(252, 252, 252, 0.75);
 }
@@ -203,6 +208,70 @@ ol{
 /*   END   */
 
 /*   Navigation Menu & Menu Line   */
+
+.wrapper-menu{
+  position: fixed;
+  margin-top: 20px;
+  top: 30vh;
+  left: .5em;
+  float: right;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  margin-top: 3.5em;
+  margin-right: 1em;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 9999;
+  transition: transform 330ms ease-out;
+}
+
+.wrapper-menu.open {
+  transform: rotate(-45deg);
+}
+
+.line-menu {
+  background-color: #d82d2d;
+  border-radius: 5px;
+  width: 100%;
+  height: 3px;
+}
+
+.line-menu.half {
+  width: 50%;
+}
+
+.line-menu.start {
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: right;
+}
+
+.open .line-menu.start {
+  transform: rotate(-90deg) translateX(3px);
+}
+
+.line-menu.end {
+  align-self: flex-end;
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: left;
+}
+
+.open .line-menu.end {
+  transform: rotate(-90deg) translateX(-3px);
+}
+
+
+.rotate{
+  transform: rotate(-90deg);
+  transition: .5s ease-in-out;
+}
+
+.reverse{
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+}
+
 
 .navi{
   position: fixed;
@@ -344,6 +413,14 @@ ol{
 
 /*   Rotating Rings Circles & Labels    */
 
+#animBox{
+  height: 50vh;
+  top: 25vh;
+  width: 25vw;
+  left: 37.5vw;
+  position: absolute;
+}
+
 .jumbotron{
   border-radius: 100%!important;
   background: inherit;
@@ -352,9 +429,9 @@ ol{
   background-position: center;
   background-repeat: no-repeat;
   padding: 0!important;
-  height: 54vh;
-  top: 25%;
-  left: 5vw;
+  margin: 0!important;
+  height: 100%;
+  width: 100%;
   position: absolute;
 
 }
@@ -435,6 +512,7 @@ ol{
 /*  Model Panel  */
 
 .modelPanel{
+  top: 15vh;
   height: 100vh;
   background-image: url(../Images/FG.png);
   background-position: left;
@@ -666,9 +744,20 @@ ol{
   body{
     overflow-x: hidden;
   }
-  .landing{
-    height: 100vh;
+  .container-fluid{
+    min-height: 100vh;
   }
+  .logo{
+    height: 40vw;
+    left: 30vw!important;
+  }
+  #animBox{
+  height: 20vh;
+  width: 85vw;
+  top: 20vh!important;
+  left: 7.5vw!important;
+  position: absolute;
+}
   .title{
     font-size: 6vw;
     margin: 0;
@@ -706,7 +795,7 @@ ol{
   }
   .logo{
     left: 0vw;
-    top: 38vh;
+    top: 30vh;
   }
   .white{
     color: black;
@@ -756,5 +845,16 @@ ol{
   }
   .teamAnimation p{
     font-size: 4vw;
+  }
+  .animBox{
+    position: relative;
+    height: auto;
+    overflow-x: none;
+  }
+  .wrapper-menu{
+    top: 0;
+  }
+  .modelPanel{
+    top: 0;
   }
 }
