@@ -32,45 +32,22 @@ $(document).ready(function(){
   if(mq.matches){
     var audio = document.getElementById("myaudio");
     audio.volume = 0.1;
-  $(".design").click(function(){
-    $("#close").fadeIn(3200);
-    $(".line3").fadeIn(3200);
-    $("#design").fadeIn(3200);
-    $("#close, .jumbotron").click(function(){
-      $("#close").hide();
-      $(".line3").hide();
-      $("#design").hide();
-    });
+  $(".design, #close").click(function(){
+    $("#design").fadeToggle(500);
+    $("#develop, #innovate, #consult").fadeOut(500); 
   });
-  $(".develop").click(function(){
-    $("#close").fadeIn(3200);
-    $(".line3").fadeIn(3200);
-    $("#develop").fadeIn(3200);
-    $("#close, .jumbotron").click(function(){
-      $("#close").hide();
-      $(".line3").hide();
-      $("#develop").hide();
-    });
+  $(".develop, #close").click(function(){
+    $(" #develop").fadeToggle(500);
+    $("#design, #innovate, #consult").fadeOut(500); 
   });
-  $(".innovate").click(function(){
-    $("#close").fadeIn(3200);
-    $(".line3").fadeIn(3200);
-    $("#innovate").fadeIn(3200);
-    $("#close,.jumbotron").click(function(){
-      $("#close").hide();
-      $(".line3").hide();
-      $("#innovate").hide();
-    });
+
+  $(".innovate, #close").click(function(){
+    $(" #innovate").fadeToggle(500); 
+    $("#develop, #design, #consult").fadeOut(500); 
   });
-  $(".consult").click(function(){
-    $("#close").fadeIn(3200);
-    $(".line3").fadeIn(3200);
-    $("#consult").fadeIn(3200);
-    $("#close, .jumbotron").click(function(){
-      $("#close").hide();
-      $(".line3").hide();
-      $("#consult").hide();
-    });
+  $(".consult, #close").click(function(){
+    $(" #consult").fadeToggle(500); 
+    $("#develop, #innovate, #design").fadeOut(500); 
   });
 
   $(".play").click(function(){
@@ -85,13 +62,20 @@ $(document).ready(function(){
     $(".mute").hide();
     $(".play").show();
   });
-  $(".jumbotron, .labels").click(function(){
-    $(".circle2").fadeToggle(1600);
-    $(".logo").fadeToggle(1600);
+  $(".labels").click(function(){
+    $(".jumbotron").addClass("animate");
+  });
+  $("#close").click(function(){
+    $(".#close,line3").hide();
+  });
+  $(".jumbotron").click(function(){
+    $(".logo").fadeOut(600);
     $(".jumbotron").removeClass("reverse-animate");
     $(".jumbotron").toggleClass("animate");
-    $(".jumbotron, .labels").click(function(){
+    $(".jumbotron").click(function(){
       $(".jumbotron").toggleClass("reverse-animate");
+      $("#design, #develop, #innovate, #design").fadeOut();
+      $(".logo").fadeIn(600);
     });
 
   });

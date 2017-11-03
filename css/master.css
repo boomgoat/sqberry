@@ -25,15 +25,15 @@
 
 @keyframes zoomzoom {
   0%  {
-        height: 54vh;
-        top: 25%;
-        left: 5vw;
+        height: 50vh;
+        top: 0;
+        left: 0;
       }
   100% {
+          top: -20vh;
+          left: -10vw;
           width: 45vw;
           height: 94vh;
-          margin-top: -10.5%;
-          margin-left: 23vw;
           background-color: white;
           z-index: 99999999;
         }
@@ -43,15 +43,15 @@
   0%  {
     width: 45vw;
     height: 94vh;
-    margin-top: -10.5%;
-    margin-left: 23vw;
+    top: -20vh;
+    left:-10vw;
     background-color: white;
     z-index: 99999999;
       }
   100%  {
-          height: 54vh;
-          top: 25%;
-          left: 5vw;
+          top: 0;
+          left: 0;
+          height: 50vh;
           background-color: inherit;
           z-index: 0;
         }
@@ -89,8 +89,8 @@ body{
 }
 
 .container-fluid{
-  overflow-x: hidden;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .landing{
@@ -211,8 +211,7 @@ ol{
 
 .wrapper-menu{
   position: fixed;
-  margin-top: 20px;
-  top: 30vh;
+  top: 33vh;
   left: .5em;
   float: right;
   width: 35px;
@@ -274,10 +273,10 @@ ol{
 
 
 .navi{
+  top: 28vh;
   position: fixed;
   float: left;
   z-index: 99999;
-  margin-top: 12%;
 }
 
 .grid{
@@ -327,7 +326,6 @@ ol{
   position: fixed;
   z-index: 100009;
   background-color: inherit;
-  top: 45%;
   float: left;
 }
 
@@ -478,13 +476,13 @@ ol{
 /*   Animation Classes for Circles   */
 
 .animate{
-  animation: zoomzoom .5s forwards linear;
+  animation: zoomzoom .3s forwards linear;
   animation-name: zoomzoom;
   animation-direction: normal;
 }
 
 .reverse-animate{
-  animation: zoomzoomb 1s forwards linear;
+  animation: zoomzoomb 1.5s forwards linear;
   animation-name: zoomzoomb;
   animation-direction: normal;
 }
@@ -772,20 +770,24 @@ ol{
     position: absolute;
   }
   .menu{
-    top: 35%;
   }
   .navi{
+    top: 0;
     background-color: white;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    top: 0%;
+    height: 100%;
     border-right: 2px solid #d82d2d;
   }
+  .navi .title{
+    bottom: 10em;
+    left: -3.4em;
+    font-size: 2em;
+    transform: rotate(90deg);
+  }
   .grid{
-    margin-top: 8%;
+    padding-top: 9vh;
     height: 5vh;
     margin-right: 5%;
+    border: none;
   }
   .grid h5{
     font-size: 5vw;
