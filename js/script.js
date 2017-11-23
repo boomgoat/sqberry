@@ -11,20 +11,20 @@ $(document).ready(function(){
   $(".title, .prodDev, .line2").hide();
 
   $(".menu").click(function(){
-    $(".title, .title2, .line2, .prodDev").fadeToggle(1200);
-    $(".navi").fadeToggle(1600);
-    $(".line").removeClass("slideLeft");
-    $(".line").toggleClass("slideRight");
+    $(".title, .title2, .line2, .prodDev").stop().fadeToggle(1200);
+    $(".navi").stop().fadeToggle(1600);
+    $(".line").stop().removeClass("slideLeft");
+    $(".line").stop().toggleClass("slideRight");
     $(".menu").click(function(){
-      $(".line").toggleClass("slideLeft");
+      $(".line").stop().toggleClass("slideLeft");
     });
   });
   $('.wrapper-menu').click(function(){
-      $('.wrapper-menu').toggleClass('open');
-    $('.wrapper-menu').removeClass('reverse');
-    $('.wrapper-menu').toggleClass('rotate');
+      $('.wrapper-menu').stop().toggleClass('open');
+    $('.wrapper-menu').stop().removeClass('reverse');
+    $('.wrapper-menu').stop().toggleClass('rotate');
     $('.wrapper-menu').click(function(){
-        $('.wrapper-menu').toggleClass('reverse');
+        $('.wrapper-menu').stop().toggleClass('reverse');
     });
   });
   
@@ -33,64 +33,64 @@ $(document).ready(function(){
     var audio = document.getElementById("myaudio");
     audio.volume = 0.1;
   $(".design, #close").click(function(){
-    $("#design").fadeToggle(500);
-    $("#develop, #innovate, #consult").fadeOut(500); 
+    $("#design").stop().fadeToggle(500);
+    $("#develop, #innovate, #consult").stop().fadeOut(500); 
   });
   $(".develop, #close").click(function(){
-    $(" #develop").fadeToggle(500);
-    $("#design, #innovate, #consult").fadeOut(500); 
+    $(" #develop").stop().fadeToggle(500);
+    $("#design, #innovate, #consult").stop().fadeOut(500); 
   });
 
   $(".innovate, #close").click(function(){
-    $(" #innovate").fadeToggle(500); 
-    $("#develop, #design, #consult").fadeOut(500); 
+    $(" #innovate").stop().fadeToggle(500); 
+    $("#develop, #design, #consult").stop().fadeOut(500); 
   });
   $(".consult, #close").click(function(){
-    $(" #consult").fadeToggle(500); 
-    $("#develop, #innovate, #design").fadeOut(500); 
+    $(" #consult").stop().fadeToggle(500); 
+    $("#develop, #innovate, #design").stop().fadeOut(500); 
   });
 
   $(".play").click(function(){
     document.getElementById("myaudio").muted = true;
-    $(".play").hide();
+    $(".play").stop().hide();
     window.stop();
-    $(".mute").show();
+    $(".mute").stop().show();
   });
 
   $(".mute").click(function(){
     document.getElementById("myaudio").muted = false;
-    $(".mute").hide();
-    $(".play").show();
+    $(".mute").stop().hide();
+    $(".play").stop().show();
   });
   $(".labels").click(function(){
-    $(".jumbotron").addClass("animate");
+    $(".jumbotron").stop().addClass("animate");
   });
   $("#close").click(function(){
-    $(".#close,line3").hide();
+    $(".#close,line3").stop().hide();
   });
 
 
   $(".jumbotron").click(function(){
 
 
-    $(".logo").fadeOut(600);
+    $(".logo").stop().fadeOut(600);
 
-    $(".jumbotron").removeClass("reverse-animate");
+    $(".jumbotron").stop().removeClass("reverse-animate");
 
-    $(".jumbotron").toggleClass("animate");
+    $(".jumbotron").stop().toggleClass("animate");
 
 
     $(".jumbotron").click(function(){
-      $(".jumbotron").toggleClass("reverse-animate");
-      $("#design, #develop, #innovate, #design").fadeOut();
-      $(".logo").fadeIn(600);
+      $(".jumbotron").stop().toggleClass("reverse-animate");
+      $("#design, #develop, #innovate, #design").stop().fadeOut();
+      $(".logo").stop().fadeIn(600);
     }); 
 
   });
   $(".jumbotron").on(
         "webkitAnimationEnd oanimationend msAnimationEnd animationend",
         function() {
-            $(".jumbotron").removeClass("reverse-animate");
+            $(".jumbotron").stop().removeClass("reverse-animate");
         }
     ); }
 
