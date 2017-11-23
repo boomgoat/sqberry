@@ -510,21 +510,22 @@ ol{
 /*  Model Panel  */
 
 .modelPanel{
-  top: 15vh;
   height: 100vh;
   background-image: url(../Images/FG.png);
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
+  display: block;
 }
 
 .textBox{
-  height: 100vh;
+  height: 50vh;
 }
 
 .textBox h1{
-  padding-top: 50vh;
+  padding-top: 80%;
   font-size: 5vw;
+  margin-right: -7vw;
 }
 
 /*    **** Model Panel End ****     */
@@ -533,6 +534,10 @@ ol{
 
 .emTechPanel{
   height: 100vh;
+}
+
+.arInfoBox{
+  right: 10%;
 }
 
 .arBox{
@@ -544,12 +549,11 @@ ol{
 
 .arInfoBox h1{
   font-size: 6.8vw;
-  margin-left: -8.4vw;
 }
 
 .arInfoBox p{
   font-size: 1.6vw;
-  margin-left: -3vw;
+  margin-left: 3%;
 }
 
 .vrBox{
@@ -773,9 +777,13 @@ ol{
   }
   .navi{
     top: 0;
+    position: static;
     background-color: white;
     height: 100%;
+    position: fixed;
     border-right: 2px solid #d82d2d;
+    overflow: hidden;
+    left: 0;
   }
   .navi .title{
     bottom: 10em;

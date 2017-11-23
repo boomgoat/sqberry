@@ -68,15 +68,23 @@ $(document).ready(function(){
   $("#close").click(function(){
     $(".#close,line3").hide();
   });
+
+
   $(".jumbotron").click(function(){
+
+
     $(".logo").fadeOut(600);
+
     $(".jumbotron").removeClass("reverse-animate");
+
     $(".jumbotron").toggleClass("animate");
+
+
     $(".jumbotron").click(function(){
       $(".jumbotron").toggleClass("reverse-animate");
       $("#design, #develop, #innovate, #design").fadeOut();
       $(".logo").fadeIn(600);
-    });
+    }); 
 
   });
   $(".jumbotron").on(
