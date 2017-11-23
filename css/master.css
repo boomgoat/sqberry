@@ -520,6 +520,7 @@ ol{
 
 .textBox{
   height: 100vh;
+  right: -4%;
 }
 
 .textBox h1{
