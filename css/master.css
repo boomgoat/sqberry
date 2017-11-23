@@ -194,6 +194,7 @@ ol{
   font-size: 1.25vw;
   margin-left: 19%;
   position: fixed;
+  z-index: 9999;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -524,7 +525,7 @@ ol{
 }
 
 .textBox h1{
-  padding-top: 100%;
+  padding-top: 90%;
   font-size: 5vw;
 }
 
