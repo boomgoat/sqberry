@@ -631,6 +631,7 @@ ol{
 
 .teamHead h1{
   font-size: 7vw;
+  color: white;
 }
 
 .fill{
@@ -683,7 +684,7 @@ ol{
 .clientHead{
   background-color: rgba(255, 0, 0, 0.5);
   height: 20vh;
-  width: 20.2vw;
+  color: white;
 }
 
 .clientHead h1{
