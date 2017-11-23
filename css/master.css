@@ -526,7 +526,6 @@ ol{
 .textBox h1{
   padding-top: 100%;
   font-size: 5vw;
-  margin-right: -7vw;
 }
 
 /*    **** Model Panel End ****     */
@@ -554,13 +553,15 @@ ol{
 
 .arInfoBox p{
   font-size: 1.6vw;
-  margin-left: 3%;
+  margin-left: 15%;
 }
 
 .vrBox{
   background-image: url(../Images/vr.png);
   height: 100vh;
-  margin-left: -3.85vw;
+  margin-left: 0%;
+  z-index: 1;
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -571,7 +572,7 @@ ol{
 
 .vrInfoBox h1{
   font-size: 6.8vw;
-  margin-left: 1.5vw;
+  margin-left: -15%;
 }
 
 .vrInfoBox p{
@@ -585,7 +586,6 @@ ol{
 
 .red{
   color: #d82d2d;
-  margin-right: -2.4vw;
 }
 
 /*    **** emTech Panel End ****     */
