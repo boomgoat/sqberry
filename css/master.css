@@ -82,10 +82,12 @@
 /*   Basic Structure Body Container etc.   */
 
 body{
-  /*background: url(../Images/wave.gif);*/
+  background: url(../Images/wave.gif);
   background-position: top;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-position: top;
   background-size: cover;
+  background-size: 100vw 100vh;
 }
 
 .container-fluid{
@@ -94,7 +96,7 @@ body{
 }
 
 .landing{
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.92);
 }
 
 *{
