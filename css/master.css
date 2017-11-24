@@ -750,20 +750,24 @@ ol{
 
 @media (max-width:786px) {
   body{
-    overflow-x: hidden;
+    overflow-x: hidden!important;
   }
   .container-fluid{
     min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   .logo{
     height: 40vw;
     left: 30vw!important;
   }
   #animBox{
-  height: 20vh;
+  height: 90vw;
   width: 85vw;
+  padding-top: 2vh;
+  overflow: hidden;
   top: 20vh!important;
-  left: 7.5vw!important;
+  left: 8.5vw!important;
   position: absolute;
 }
   .title{
