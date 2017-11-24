@@ -816,21 +816,32 @@ ol{
   .white{
     color: black;
   }
+  .modelPanel{
+
+  }
   .textBox{
       padding-top: 25%;
   }
   .textBox h1{
-    font-size: 7vw;
+    font-size: 7vh;
   }
   .arInfoBox  p{
-    font-size: 4vw;
+    font-size: 4vh;
   }
   .vrInfoBox  p{
-    font-size: 4vw;
+    font-size: 4vh;
   }
   .emTechPanel{
-    height: 150vh;
+    min-height: 200vh;
+    height: auto;
   }
+  .emTechPanel h1{
+    font-size: 7vh;
+  }
+  * .text-left, .text-right{
+    text-align: center;
+  }
+
   .button{
     left: 85%;
     z-index: 999;
@@ -842,6 +853,11 @@ ol{
   }
   .rD .glyphicon{
     margin-top: 1%;
+  }
+
+  .redesignPanel{
+    height: 100vh;
+    display: block;
   }
   .redesignPanel h1{
   }
