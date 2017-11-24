@@ -760,11 +760,12 @@ ol{
   .logo{
     height: 40vw;
     left: 30vw!important;
+    margin-top: 7vh;
   }
   #animBox{
-  height: 90vw;
+  height: 100vw;
   width: 85vw;
-  padding-top: 2vh;
+  padding-top: 7vh;
   overflow: hidden;
   top: 20vh!important;
   left: 8.5vw!important;
@@ -829,23 +830,42 @@ ol{
   .textBox h1{
     font-size: 7vh;
   }
+  .arInfoBox{
+    height: auto;
+  }
+  .vrInfoBox{
+    height: auto;
+  }
+  .arBox{
+    padding: 0;
+    margin: 0;
+    height: 70vh;
+  }
+  .vrBox{
+    height: 70vh;
+  }
   .arInfoBox  p{
     font-size: 4vh;
+    margin: 0;
+    padding: 0;
   }
   .vrInfoBox  p{
     font-size: 4vh;
+    margin: 0;
+    padding: 0;
   }
   .emTechPanel{
-    min-height: 200vh;
+    min-height: 150vh;
     height: auto;
   }
   .emTechPanel h1{
     font-size: 7vh;
+    margin: 0;
+    padding: 0;
   }
   * .text-left, .text-right{
     text-align: center;
   }
-
   .button{
     left: 85%;
     z-index: 999;
@@ -864,10 +884,12 @@ ol{
     display: block;
   }
   .redesignPanel h1{
+    font-size: 7vh;
   }
   .redesignPanel p{
     margin-top: 75%;
-    font-size: 5vw;
+    font-size: 5vh;
+    padding-top: 18vh; 
   }
   .teamPanel{
     height: 250vh;
