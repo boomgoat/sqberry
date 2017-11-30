@@ -750,7 +750,41 @@ ol{
 
 /*   Desktop Stylesheet END   */
 
-@media (max-width:786px) {
+@media (max-width: 899px) and (min-width: 680px){
+  .logo{
+    margin-left: 55.5vh;
+    width: 15vw;
+  }
+  .textBox h1{
+    padding-top: 70%;
+  }
+  .title{
+    margin-top:-12%;
+  }
+  .navi{
+    top: 20vh;
+  }
+  .grid{
+    margin-left: 1em;
+    text-align: right;
+  }
+  .grid h5{
+    font-size: 3vh;
+  }
+  .line{
+    margin-top: 5%;
+  }
+  .jumbotron{
+    width: 45vh;
+    height: 50vh;
+  }
+  .wrapper-menu{
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media (max-width:756px) {
   body{
     overflow-x: hidden!important;
   }
